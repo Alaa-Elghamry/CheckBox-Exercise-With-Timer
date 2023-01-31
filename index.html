@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/icons/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/styles/plugins/bootstrap/bootstrap.min.css"
+    />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      href="./assets/styles/plugins/animateCss/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/styles/plugins/animateCss/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/exStyle.css" />
+
+    <script src="./assets/scripts/plugins/jquery-3.6.1.min.js"></script>
+    <script src="./assets/scripts/plugins/jquery.js"></script>
+    <script src="./assets/scripts/plugins/jquery_v3.3.1.js"></script>
+    <title>checkbox EX</title>
+  </head>
+
+  <body>
+    <!-- NOTE start the preloader -->
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+    <!-- NOTE end the preloader -->
+
+    <!-- NOTE start the main page   -->
+    <main class="main_layout row p-0 m-0 mx-auto">
+      <section
+        id="EX_layout"
+        class="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-7 col-xll-6 p-0 m-0"
+      >
+        <!--  NOTE  start fixed header  -->
+        <header class="Question_header">
+          <h1 class="Question_title m-0">Answer The Following Questions.</h1>
+        </header>
+        <!-- NOTE end  fixed header -->
+        <!-- SECTION  here is the main space for questions  -->
+        <main class="Questions p-4">
+          <div
+            id="myCarousel"
+            class="carousel carousel-dark slide"
+            data-bs-ride="false"
+            data-interval="false"
+          >
+            <div class="carousel-inner">
+              <!-- SECTION  here is the Timer screen  -->
+              <div class="start-container">
+                <div class="outercircle-container center">
+                  <div class="circle-container center">
+                    <div class="semicircle red-circle"></div>
+                    <div class="semicircle blue-circle"></div>
+                    <div class="semicircle white-circle"></div>
+                    <div class="outercircle black-circle center"></div>
+                  </div>
+                  <div class="timer-container center">
+                    <div class="timer center"></div>
+                  </div>
+                </div>
+
+                <!-- SECTION  here is the Circles screen  -->
+                <div class="circles"></div>
+              </div>
+              <!-- -------------------------------------------------------------------- -->
+              <div class="template1_v2">
+                <!-- SECTION  here is the First screen  -->
+                <div class="carousel-item item item_1 active">
+                  <div class="question question_1" id="1">
+                    <h2>1. What Programming Language you use?</h2>
+                    <form class="options">
+                      <div
+                        class="custom-checkbox option selectall"
+                        data-Answer="incorrect"
+                      >
+                        <input type="checkbox" class="selectall" />
+                        <span class="checkmark"></span>
+                        <span class="label"> Select All </span>
+                      </div>
+                      <!-- <div class="option " data-Answer="incorrect"><input type="checkbox" /> Python  </div> -->
+                      <div
+                        class="custom-checkbox option individual"
+                        data-Answer="correct"
+                      >
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="label"> JavaScript</span>
+                      </div>
+                      <div
+                        class="custom-checkbox option individual"
+                        data-Answer="correct"
+                      >
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="label">jQuery</span>
+                      </div>
+                      <div
+                        class="custom-checkbox option individual"
+                        data-Answer="incorrect"
+                      >
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="label"> Python</span>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="question question_2" id="2">
+                    <h2>2. 100 + 80 = 10080</h2>
+                    <br />
+                    <form class="options">
+                      <div class="custom-checkbox option" data-Answer="correct">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="label"> Python</span>
+                      </div>
+                      <div class="custom-checkbox option" data-Answer="correct">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="label"> JavaScript</span>
+                      </div>
+                      <div class="custom-checkbox option" data-Answer="correct">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="label">jQuery</span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- SECTION  here is the second screen  -->
+                <div class="carousel-item item item_2">
+                  <div class="question question_3" id="3">
+                    <h2>3. 100 + 80 = 10080</h2>
+                    <br />
+                    <form class="options">
+                      <div class="option custom-checkbox" data-Answer="correct">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="label"> Python</span>
+                      </div>
+                      <div
+                        class="option custom-checkbox"
+                        data-Answer="incorrect"
+                      >
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="label"> JavaScript</span>
+                      </div>
+                      <div class="option custom-checkbox" data-Answer="correct">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="label">jQuery</span>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="question question_4" id="4">
+                    <h2>4. 100 + 80 = 10080</h2>
+                    <br />
+                    <form class="options">
+                      <div class="option custom-checkbox" data-Answer="correct">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="label"> Python</span>
+                      </div>
+                      <div
+                        class="option custom-checkbox"
+                        data-Answer="incorrect"
+                      >
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="label"> JavaScript</span>
+                      </div>
+                      <div
+                        class="option custom-checkbox"
+                        data-Answer="incorrect"
+                      >
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                        <span class="label">jQuery</span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- SECTION  here is the third screen  -->
+                <!-- <div class="carousel-item item item_3 ">
+                                <div class="question question_5" id="5">
+                                    <h2>5. 100 + 80 = 10080 </h2><br>
+                                    <form class="options">
+                                        <div class="option " data-Answer="correct"><input type="checkbox" /> Python
+                                        </div>
+                                        <div class="option" data-Answer="incorrect">
+                                            <input type="checkbox" /> JavaScript
+                                        </div>
+                                        <div class="option" data-Answer="correct">
+                                            <input type="checkbox" /> jQuery
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="question question_6" id="6">
+                                    <h2>6. 100 + 80 = 10080 </h2><br>
+                                    <form class="options">
+                                        <div class="option " data-Answer="correct"><input type="checkbox" /> Python
+                                        </div>
+                                        <div class="option" data-Answer="incorrect">
+                                            <input type="checkbox" /> JavaScript
+                                        </div>
+                                        <div class="option" data-Answer="correct">
+                                            <input type="checkbox" /> jQuery
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>  -->
+
+                <!-- SECTION  here is the fourth screen  -->
+                <!-- <div class="carousel-item item item_4 ">
+                                <div class="question question_7" id="7">
+                                    <h2>7. 100 + 80 = 10080 </h2><br>
+                                    <form class="options">
+                                        <div class="option " data-Answer="correct"><input type="checkbox" /> Python
+                                        </div>
+                                        <div class="option" data-Answer="incorrect">
+                                            <input type="checkbox" /> JavaScript
+                                        </div>
+                                        <div class="option" data-Answer="correct">
+                                            <input type="checkbox" /> jQuery
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="question question_8" id="8">
+                                    <h2>8. 100 + 80 = 10080 </h2><br>
+                                    <form class="options">
+                                        <div class="option " data-Answer="correct"><input type="checkbox" /> Python
+                                        </div>
+                                        <div class="option" data-Answer="incorrect">
+                                            <input type="checkbox" /> JavaScript
+                                        </div>
+                                        <div class="option" data-Answer="correct">
+                                            <input type="checkbox" /> jQuery
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>  -->
+              </div>
+              <div id="scoreContainer" style="display: none"></div>
+            </div>
+          </div>
+        </main>
+
+        <!-- SECTION  here is the fixed footer  -->
+        <footer
+          class="footer d-flex justify-content-center align-items-center fs-2 fs-sm-1 fs-md-2 fs-lg-2 gap-2 gap-sm-3 gap-md-3 gap-lg-4"
+        >
+          <div class="reload_btn_wrapper wow fadeInLeft" data-duration>
+            <button
+              class="footer_btn float reload_btn"
+              data-bs-toggle="tooltip"
+              title="Reload "
+              role="button"
+            >
+              <i class="bi bi-arrow-clockwise"></i>
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center pagination_wrapper gap-1 gap-sm-2 gap-md-2 gap-lg-2"
+          >
+            <button
+              class="carousel-control-prev footer_btn transLeft wow animate__fadeInDown prevent_click"
+              data-duration
+              id="prev_screen"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <i class="bi bi-arrow-left-circle"></i>
+            </button>
+            <div
+              class="num footer_btn wow animate__fadeInDown"
+              data-duration
+            ></div>
+            <button
+              class="carousel-control-next footer_btn transRight wow animate__fadeInDown"
+              data-duration
+              id="next_screen"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+            >
+              <i class="bi bi-arrow-right-circle"></i>
+            </button>
+          </div>
+          <div class="check_btn_wrapper">
+            <button
+              class="footer_btn float wow fadeInRight check_btn prevent_click"
+              title="Check Answer"
+              data-duration
+              role="button"
+              data-bs-toggle="tooltip"
+              id="check_btn"
+            >
+              <i class="bi bi-check2-circle"></i>
+            </button>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <!-- NOTE   preloader script  -->
+    <script>
+      $(window).on("load", function () {
+        $("#preloader").fadeOut(1750);
+        fnTemplate1_v2($("div.active"));
+      });
+    </script>
+
+    <script src="./assets/scripts/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/scripts/index.js" defer></script>
+    <script src="./assets/scripts/exScript.js" defer></script>
+    <script src="./assets/scripts/plugins/wow.js"></script>
+  </body>
+</html>
