@@ -238,3 +238,10 @@ form {
     font-size: 1em;
     margin: 0 10px;
 }
+
+@media (width <=480px) {
+    .start-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
