@@ -281,10 +281,10 @@ function fnTemplate1_v2(_div) {
     </div> 
     `)
   setTimeout(() => {
-    $(`#scoreContainer`).css('display', 'none')
-    $(`#scoreContainer`).html('')
-  }, 2000);
-    }
+}, 2000);
+}
+$(`#scoreContainer`).css('display', 'none')
+$(`#scoreContainer`).html('')
 
     ////////////////////////// Next Button Function ////////////////////////////////////////////////////////
     $('#next_screen').on('click', function () {

@@ -179,7 +179,7 @@ form {
 }
 
 #scoreContainer{
-    margin: 150px auto;
+    margin: 4rem auto;
     background-color: white;
     height: 30vh;
     width: 35vw;
@@ -239,9 +239,40 @@ form {
     margin: 0 10px;
 }
 
+@media (width <=768px) {
+    #scoreContainer {
+        height: 25vh;
+        width: 55vw;
+    }
+
+}
+
+@media (width <=667px) {
+    #scoreContainer {
+        margin: 4rem auto;
+        width: 60vw;
+        height: 60vh;
+    
+    }
+}
+
 @media (width <=480px) {
     .start-container {
         flex-direction: column;
         align-items: center;
     }
+
+    #scoreContainer {
+        width: 66vw;
+        margin: 5rem auto;
+        height: 27vh;
+    }
+}
+@media (width <=375px) {
+    #scoreContainer {
+        width: 66vw;
+        margin: 5rem auto;
+        height: 37vh;
+    }
+
 }
